@@ -17,3 +17,29 @@
     font-size: 30px;
 }
 
+@media screen and (max-width: 600px){
+    .column {
+        width:100%;
+    
+    }
+}
+
+body {
+    background-color: aqua;
+    background: linear-gradient(blueviolet,rgb(82, 5, 154));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    height: 600px;
+    padding: 20px;
+    color: whitesmoke;
+    position: relative;
+    column-count: 3;
+}
