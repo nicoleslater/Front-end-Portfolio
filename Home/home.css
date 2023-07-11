@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-rows: 100px 200px;
+    place-items: center;
+}
+
 .main{
     padding: 20px;
     font-size: 18px;
