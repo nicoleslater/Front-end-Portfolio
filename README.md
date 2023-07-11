@@ -6,7 +6,9 @@ As a part of this project I will design a site for people who love reading books
 
 
 Pages for Deployment: 
-1. http://127.0.0.1:5500/index.html
-2. http://127.0.0.1:5500/basic.html
+
+1. Contact: http://127.0.0.1:5500/Contacts/contact.html
+2. Profile: http://127.0.0.1:5500/Profile/profile.html
+3. Home: http://127.0.0.1:5500/Home/home.html
 
 
