@@ -10,11 +10,16 @@
 }
 
 .header{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria;
     color: whitesmoke;
     padding: 30px;
     text-align: center;
     font-size: 30px;
+}
+
+h1 {
+    text-align: left;
+
 }
 
 @media screen and (max-width: 600px){
