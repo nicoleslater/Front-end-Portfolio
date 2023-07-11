@@ -25,14 +25,14 @@
 }
 
 body {
-    background-color: aqua;
-    background: linear-gradient(blueviolet,rgb(82, 5, 154));
-    display: flex;
+    background-color: rgb(255, 0, 174);
+    background: linear-gradient(rgb(32, 229, 176),rgb(21, 137, 13));
+    display: grid;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: sans-serif;
 }
 
 .container {
@@ -41,5 +41,5 @@ body {
     padding: 20px;
     color: whitesmoke;
     position: relative;
-    column-count: 3;
+    column-count: 2;
 }
