@@ -1,6 +1,7 @@
 
-async function getNews(){
-    await fetch('https://newsapi.org/v2/everything?q=Apple&from=2023-07-12&sortBy=popularity&apiKey=248076a179b4446ca60d2fbbe2fbbb60')
+ function getNews(){
+    fetch('https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?q=Apple&from=2023-07-12&sortBy=popularity&apiKey=248076a179b4446ca60d2fbbe2fbbb60',{headers: new Headers({"X-Requested-With":"Please Follow"})}
+    )
     .then(data => data.json())
     .then(response => {
         console.log(response.results);
@@ -20,6 +21,7 @@ async function getNews(){
                 </div>
                 </div>
                 </div>
+                <br>
                 `
             }
             catch(err){
