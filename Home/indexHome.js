@@ -29,7 +29,9 @@ async function getNews(){
         
         
         }
+        document.getElementById('copyright').innerHTML = response.copyright;
     })}
+    getNews()
 
 
 
