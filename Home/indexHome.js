@@ -13,14 +13,14 @@ async function getNews(){
                 output.innerHTML += `
                 <div class="card">
                 <div class="card-body">
-                <img src="${response.results[i]['media'][0][media-metadata][2].url}" />
+                <img src="${response.results[i]}" />
                 <h2>${response.results[i].title}</h2>
                 <div class="card-text">
                 <p>${response.results[i].abstract}</p>
                 </div>
                 </div>
                 </div>
-                <br>`
+                `
             }
             catch(err){
                 console.log(err);
