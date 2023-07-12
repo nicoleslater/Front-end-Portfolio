@@ -31,7 +31,7 @@
         
         
         }
-        document.getElementById('copyright').innerHTML = response.copyright;
+        
     })}
     getNews()
 
