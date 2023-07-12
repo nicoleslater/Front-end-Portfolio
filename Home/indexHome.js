@@ -13,7 +13,7 @@ async function getNews(){
                 output.innerHTML += `
                 <div class="card">
                 <div class="card-body">
-                <img src="${response.results[i]['media'][0][media-metadata]}" />
+                <img src="${response.results[i]['media'][0][media-metadata][2].url}" />
                 <h2>${response.results[i].title}</h2>
                 <div class="card-text">
                 <p>${response.results[i].abstract}</p>
