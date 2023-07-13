@@ -1,15 +1,25 @@
-const url = 'https://newsapi.org/v2/everything?' +
-'q=Apple&' + 
-'from=2023-07-12&' +
-'sortBy=popularity&' + 
-'apiKey=248076a179b4446ca60d2fbbe2fbbb60';
+// const url = 'https://newsapi.org/v2/everything?' +
+// 'q=Apple&' + 
+// 'from=2023-07-12&' +
+// 'sortBy=popularity&' + 
+// 'apiKey=248076a179b4446ca60d2fbbe2fbbb60';
 
-const request = new Request(url);
+// const request = new Request(url);
 
-fetch(request)
-.then(function(response){
-    console.log(response.json());
-})
+// fetch(request)
+// .then(function(response){
+//     console.log(response.json());
+// })
+
+const url = 'https://newsapi.org/v2/top-headlines?' +
+          'country=us&' +
+          'apiKey=248076a179b4446ca60d2fbbe2fbbb60';
+const req = new Request(url);
+fetch(req)
+    .then(function(response) {
+        console.log(response.json());
+    })
+
 
 
 //  function getNews(){
