@@ -38,8 +38,8 @@ h1 {
 }
 
 body {
-    background-color: rgb(18, 17, 18);
-    background: linear-gradient(rgb(80, 46, 108),rgb(231, 17, 217));
+    background-color: rgb(240, 12, 240);
+    background: linear-gradient(rgb(235, 8, 201),rgb(235, 10, 220));
     display: grid;
     flex-direction: column;
     justify-content: center;
