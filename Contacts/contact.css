@@ -37,6 +37,13 @@ h1 {
     }
 }
 
+.table-section {
+   
+    justify-content: space-around;
+    padding: 100px;
+    margin: 100px;
+}
+
 body {
     background-color: rgb(236, 178, 17);
     background: linear-gradient(rgb(216, 90, 22),rgb(237, 117, 4));
