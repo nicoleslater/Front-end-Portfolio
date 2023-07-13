@@ -1,4 +1,15 @@
+const url = 'https://newsapi.org/v2/everything?' +
+'q=Apple&' + 
+'from=2023-07-12&' +
+'sortBy=popularity&' + 
+'apiKey=248076a179b4446ca60d2fbbe2fbbb60';
 
+const request = new Request(url);
+
+fetch(request)
+.then(function(response){
+    console.log(response.json());
+})
  function getNews(){
     fetch('https://newsapi.org/v2/everything?q=Apple&from=2023-07-12&sortBy=popularity&apiKey=248076a179b4446ca60d2fbbe2fbbb60')
     .then(data => data.json())
