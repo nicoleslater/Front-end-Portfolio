@@ -4,17 +4,8 @@
     box-sizing: border-box;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 200px 1fr;
-    grid-template-rows: 50px 50px ;
-    place-items: center;
-}
 
-.main{
-    padding: 20px;
-    font-size: 18px;
-}
+
 
 a:hover {
     background-color: rgb(197, 14, 45);
