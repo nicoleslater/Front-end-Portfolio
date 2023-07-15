@@ -43,7 +43,7 @@ searchBtn.addEventListener("click", function(){
 
 const fetchGeneralNews = async () => {
     const response = await fetch(GENERAL_NEWS+API_KEY);
-
+    newData = [];
     if (response.status >= 200 && response.status < 300){
             const myJson = await response.json();
             newsData = myJson;
@@ -53,6 +53,51 @@ const fetchGeneralNews = async () => {
     displayNews();
 }
 
+const fetchBusinessNews = async () => {
+    const response = await fetch(BUSINESS_NEWS+API_KEY);
+    newData = [];
+    if (response.status >= 200 && response.status < 300){
+            const myJson = await response.json();
+            newsData = myJson;
+    } else {
 
+    }
+    displayNews();
+}
 
+const fetchSportsNews = async () => {
+    const response = await fetch(SPORTS_NEWS+API_KEY);
+    newData = [];
+    if (response.status >= 200 && response.status < 300){
+            const myJson = await response.json();
+            newsData = myJson;
+    } else {
+
+    }
+    displayNews();
+}
+
+const fetchEntertainmentNews = async () => {
+    const response = await fetch(ENTERTAINMENT_NEWS+API_KEY);
+    newData = [];
+    if (response.status >= 200 && response.status < 300){
+            const myJson = await response.json();
+            newsData = myJson;
+    } else {
+
+    }
+    displayNews();
+}
+
+const fetchTechnologyNews = async () => {
+    const response = await fetch(TECHNOLOGY_NEWS+API_KEY);
+    newData = [];
+    if (response.status >= 200 && response.status < 300){
+            const myJson = await response.json();
+            newsData = myJson;
+    } else {
+
+    }
+    displayNews();
+}
 
