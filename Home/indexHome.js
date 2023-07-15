@@ -17,28 +17,41 @@ const BUSINESS_NEWS = "https://newsapi.org/v2/top-headlines?country=in&category=
 const SPORTS_NEWS = "https://newsapi.org/v2/top-headlines?country=in&category=sports&apikey=";
 const ENTERTAINMENT_NEWS = "https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apikey=";
 const TECHNOLOGY_NEWS = "https://newsapi.org/v2/top-headlines?country=in&category=technology&apikey=";
+const GENERAL_NEWS = "https://newsapi.org/v2/top-headlines?country=in&category=general&apikey=";
+
 
 
 generalBtn.addEventListener("click", function(){
+    fetchGeneralNews();
 
-})
+});
 businessBtn.addEventListener("click", function(){
-    
-})
+    fetchGeneralNews();
+});
 sportsBtn.addEventListener("click", function(){
-    
+    fetchGeneralNews();
 })
 technologyBtn.addEventListener("click", function(){
-    
-})
+    fetchGeneralNews();
+});
 entertainmentBtn.addEventListener("click", function(){
-    
-})
+    fetchGeneralNews();
+});
 searchBtn.addEventListener("click", function(){
-    
-})
+    fetchGeneralNews();
+});
 
+const fetchGeneralNews = async () => {
+    const response = await fetch(GENERAL_NEWS+API_KEY);
 
+    if (response.status >= 200 && response.status < 300){
+            const myJson = await response.json();
+            newsData = myJson;
+    } else {
+
+    }
+    displayNews();
+}
 // let url = 'https://newsapi.org/v2/top-headlines?' +
 //           'country=us&' +
 //           'apiKey=248076a179b4446ca60d2fbbe2fbbb60';
