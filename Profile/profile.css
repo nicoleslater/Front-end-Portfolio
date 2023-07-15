@@ -4,17 +4,9 @@
     box-sizing: border-box;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 200px 1fr;
-    grid-template-rows: 50px 50px ;
-    place-items: center;
-}
 
-.main{
-    padding: 20px;
-    font-size: 18px;
-}
+
+
 
 .header{
     font-family: Cambria;
@@ -46,13 +38,4 @@ body {
     align-items: center;
     height: 100vh;
     font-family: sans-serif;
-}
-
-.container {
-    width: 70%;
-    height: 500px;
-    padding: 20px;
-    color: whitesmoke;
-    position: relative;
-    column-count: 2;
 }
