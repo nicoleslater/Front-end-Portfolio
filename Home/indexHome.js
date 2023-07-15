@@ -1,4 +1,4 @@
-https://newsapi.org/v2/everything?q=Apple&from=2023-07-12&sortBy=popularity&apiKey=248076a179b4446ca60d2fbbe2fbbb60
+
 
 const newsQuery = document.getElementById("newsQuery");
 const newsdetails = document.getElementById("newsdetails");
@@ -7,12 +7,12 @@ const generalBtn = document.getElementById("general");
 const businessBtn = document.getElementById("business");
 const sportsBtn = document.getElementById("sports");
 const technologyBtn = document.getElementById("technology");
-const entertainmenttBtn = document.getElementById("entertainment");
+const entertainmentBtn = document.getElementById("entertainment");
 const searchBtn = document.getElementById("searchBtn");
 
 const API_KEY = "248076a179b4446ca60d2fbbe2fbbb60";
 const SEARCH_NEWS = "https://newsapi.org/v2/everything?q=";
-const HEADLINES_NEWS = "https://newsapi.org/v2/top-headlines?country=in&apikey=";
+const HEADLINE_NEWS = "https://newsapi.org/v2/top-headlines?country=in&apikey=";
 const BUSINESS_NEWS = "https://newsapi.org/v2/top-headlines?country=in&category=business&apikey=";
 const SPORTS_NEWS = "https://newsapi.org/v2/top-headlines?country=in&category=sports&apikey=";
 const ENTERTAINMENT_NEWS = "https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apikey=";
@@ -25,18 +25,23 @@ generalBtn.addEventListener("click", function(){
     fetchGeneralNews();
 
 });
+
 businessBtn.addEventListener("click", function(){
     fetchBusinessNews();
 });
+
 sportsBtn.addEventListener("click", function(){
     fetchSportsNews();
-})
+});
+
 technologyBtn.addEventListener("click", function(){
     fetchTechnologyNews();
 });
+
 entertainmentBtn.addEventListener("click", function(){
     fetchEntertainmentNews();
 });
+
 searchBtn.addEventListener("click", function(){
     fetchQueryNews();
 });
@@ -47,7 +52,7 @@ const fetchGeneralNews = async () => {
     if (response.status >= 200 && response.status < 300){
             const myJson = await response.json();
             console.log(myJson)
-            newsData = myJson;
+            newsData = myJson.articles;
     } else {
             console.log(response.status, response.statusText);
     }
@@ -59,7 +64,7 @@ const fetchBusinessNews = async () => {
     newsData = [];
     if (response.status >= 200 && response.status < 300){
             const myJson = await response.json();
-            newsData = myJson;
+            newsData = myJson.articles;
     } else {
         console.log(response.status, response.statusText);
     }
@@ -71,7 +76,7 @@ const fetchSportsNews = async () => {
     newsData = [];
     if (response.status >= 200 && response.status < 300){
             const myJson = await response.json();
-            newsData = myJson;
+            newsData = myJson.articles;
     } else {
         console.log(response.status, response.statusText);
     }
@@ -83,7 +88,7 @@ const fetchEntertainmentNews = async () => {
     newsData = [];
     if (response.status >= 200 && response.status < 300){
             const myJson = await response.json();
-            newsData = myJson;
+            newsData = myJson.articles;
     } else {
         console.log(response.status, response.statusText);
     }
@@ -95,7 +100,7 @@ const fetchTechnologyNews = async () => {
     newsData = [];
     if (response.status >= 200 && response.status < 300){
             const myJson = await response.json();
-            newsData = myJson;
+            newsData = myJson.articles;
     } else {
         console.log(response.status, response.statusText);
     }
@@ -107,7 +112,7 @@ const fetchQueryNews = async () => {
         newsData = [];
     if(response.status >= 200 && response.status < 300){
         const myJson = await response.json();
-        newsData = myJson;
+        newsData = myJson.articles;
     } else {
         console.log(response.status, response.statusText);
     }
