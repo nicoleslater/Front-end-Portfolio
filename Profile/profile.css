@@ -41,6 +41,15 @@ body {
 .container .title{
     font-size: 25px;
     font-weight: 500;
+    position: relative;
+}
+.container .title: :before{
+    content:'';
+    left:0;
+    bottom:0;
+    position: absolute;
+    height: 3px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
 
 .container{
@@ -49,6 +58,26 @@ body {
     width: 100%;
     background:#fff;
     border-radius: 5px;
+}
 
-    
+.container form .user-details{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+form .user-details .input-box{
+    width: calc(100%/ 2 - 20px);
+    margin: 20px 0 12px 0;
+}
+
+.user-details .input-box .details{
+    font-weight:500;
+    margin-bottom: 5px
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+
 }
