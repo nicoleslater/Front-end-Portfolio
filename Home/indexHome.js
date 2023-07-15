@@ -26,19 +26,19 @@ generalBtn.addEventListener("click", function(){
 
 });
 businessBtn.addEventListener("click", function(){
-    fetchGeneralNews();
+    fetchBusinessNews();
 });
 sportsBtn.addEventListener("click", function(){
-    fetchGeneralNews();
+    fetchSportsNews();
 })
 technologyBtn.addEventListener("click", function(){
-    fetchGeneralNews();
+    fetchTechnologyNews();
 });
 entertainmentBtn.addEventListener("click", function(){
-    fetchGeneralNews();
+    fetchEntertainmentNews();
 });
 searchBtn.addEventListener("click", function(){
-    fetchGeneralNews();
+    fetchQueryNews();
 });
 
 const fetchGeneralNews = async () => {
