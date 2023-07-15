@@ -75,9 +75,13 @@ form .user-details .input-box{
 .user-details .input-box .details{
     font-weight:500;
     margin-bottom: 5px
+    display: block;
 }
 .user-details .input-box input{
     height: 45px;
     width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 
 }
