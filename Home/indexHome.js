@@ -19,32 +19,58 @@ const ENTERTAINMENT_NEWS = "https://newsapi.org/v2/top-headlines?country=in&cate
 const TECHNOLOGY_NEWS = "https://newsapi.org/v2/top-headlines?country=in&category=technology&apikey=";
 const GENERAL_NEWS = "https://newsapi.org/v2/top-headlines?country=in&category=general&apikey=";
 
+windows.onload = function(){
+    newsType.innerHTML ="<h4>Headlines</h4>";
+    fetchHeadlines();
+};
+
 
 
 generalBtn.addEventListener("click", function(){
+    newsType.innerHTML ="<h4>General News</h4>";
     fetchGeneralNews();
 
 });
 
 businessBtn.addEventListener("click", function(){
+    newsType.innerHTML ="<h4>Business</h4>";
     fetchBusinessNews();
 });
 
 sportsBtn.addEventListener("click", function(){
+    newsType.innerHTML ="<h4>Sports</h4>";
     fetchSportsNews();
 });
 
 technologyBtn.addEventListener("click", function(){
+    newsType.innerHTML ="<h4>Technology</h4>";
     fetchTechnologyNews();
 });
 
 entertainmentBtn.addEventListener("click", function(){
+    newsType.innerHTML ="<h4>Entertainment</h4>";
     fetchEntertainmentNews();
 });
 
 searchBtn.addEventListener("click", function(){
+    newsType.innerHTML ="<h4>Search: "+newsQuery.value+"</h4>";
     fetchQueryNews();
 });
+
+
+const fetchHeadline = async () => {
+    const response = await fetch(HEADLINE_NEWS+API_KEY);
+    newsData = [];
+    if (response.status >= 200 && response.status < 300){
+            const myJson = await response.json();
+            console.log(myJson)
+            newsData = myJson.articles;
+    } else {
+            console.log(response.status, response.statusText);
+    }
+    displayNews();
+}
+
 
 const fetchGeneralNews = async () => {
     const response = await fetch(GENERAL_NEWS+API_KEY);
