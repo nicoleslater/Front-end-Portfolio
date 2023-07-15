@@ -1,5 +1,31 @@
-.navbar{
- padding:0;
- margin:0;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-rows: 50px 50px ;
+    place-items: center;
+}
+
+.main{
+    padding: 20px;
+    font-size: 18px;
+}
+
+a:hover {
+    background-color: rgb(197, 14, 45);
+  }
+
+
+.h1,.h2,.h3,.h4,.h5{
+    font-family: Cambria;
+    color: whitesmoke;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
 }
 
