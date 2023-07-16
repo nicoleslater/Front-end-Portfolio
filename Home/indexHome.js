@@ -54,10 +54,10 @@ entertainmentBtn.addEventListener("click", function(){
     fetchEntertainmentNews();
 });
 
-searchBtn.addEventListener("click", function(){
-    newsType.innerHTML ="<h4>Search: "+newsQuery.value+"</h4>";
-    fetchQueryNews();
-});
+// searchBtn.addEventListener("click", function(){
+//     newsType.innerHTML ="<h4>Search: "+newsQuery.value+"</h4>";
+//     fetchQueryNews();
+// });
 
 
 // const fetchHeadline = async () => {
