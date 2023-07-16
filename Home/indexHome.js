@@ -11,7 +11,7 @@ const entertainmentBtn = document.getElementById("entertainment");
 const searchBtn = document.getElementById("searchBtn");
 
 const API_KEY = "248076a179b4446ca60d2fbbe2fbbb60";
-const SEARCH_NEWS = "https://newsapi.org/v2/everything?q=";
+const SEARCH_NEWS = "https://newsapi.org/v2/everything";
 const HEADLINE_NEWS = "https://newsapi.org/v2/top-headlines?country=us&apikey=";
 const BUSINESS_NEWS = "https://newsapi.org/v2/top-headlines?country=us&category=business&apikey=";
 const SPORTS_NEWS = "https://newsapi.org/v2/top-headlines?country=us&category=sports&apikey=";
