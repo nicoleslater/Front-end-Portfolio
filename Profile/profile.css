@@ -83,6 +83,7 @@ form .user-details .input-box{
     height: 45px;
     width: 100%;
     outline: none;
+    border-bottom-width: 2px;
     border-radius: 5px;
     border: 1px solid #ccc;
     padding-left:15px;
