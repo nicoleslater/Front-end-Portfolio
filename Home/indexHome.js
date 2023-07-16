@@ -10,8 +10,8 @@ const technologyBtn = document.getElementById("technology");
 const entertainmentBtn = document.getElementById("entertainment");
 const searchBtn = document.getElementById("searchBtn");
 
-const API_KEY = "248076a179b4446ca60d2fbbe2fbbb60";
-const SEARCH_NEWS = "https://newsapi.org/v2/everything";
+const API_KEY = "48ec5f7d46cf41cc85620f9bf94a7b1f";
+const SEARCH_NEWS = "https://newsapi.org/v2/everything?q=bitcoin&apikey=";
 const HEADLINE_NEWS = "https://newsapi.org/v2/top-headlines?country=us&apikey=";
 const BUSINESS_NEWS = "https://newsapi.org/v2/top-headlines?country=us&category=business&apikey=";
 const SPORTS_NEWS = "https://newsapi.org/v2/top-headlines?country=us&category=sports&apikey=";
@@ -54,10 +54,10 @@ entertainmentBtn.addEventListener("click", function(){
     fetchEntertainmentNews();
 });
 
-// searchBtn.addEventListener("click", function(){
-//     newsType.innerHTML ="<h4>Search: "+newsQuery.value+"</h4>";
-//     fetchQueryNews();
-// });
+searchBtn.addEventListener("click", function(){
+    newsType.innerHTML ="<h4>Search: "+newsQuery.value+"</h4>";
+    fetchQueryNews();
+});
 
 
 // const fetchHeadline = async () => {
@@ -139,7 +139,7 @@ const fetchQueryNews = async () => {
     if(newsQuery.value == null)
             return;
 
-    const response = await fetch(SEARCH_NEWS+encodeURIComponent(newsQuery.value)+"&apikey=248076a179b4446ca60d2fbbe2fbbb60"+API_KEY);
+    const response = await fetch(SEARCH_NEWS+encodeURIComponent(newsQuery.value)+"&apikey=48ec5f7d46cf41cc85620f9bf94a7b1f"+API_KEY);
         newsData = [];
     if(response.status >= 200 && response.status < 300){
         const myJson = await response.json();
