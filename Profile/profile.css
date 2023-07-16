@@ -85,13 +85,28 @@ form .user-details .input-box{
     outline: none;
     border-bottom-width: 2px;
     border-radius: 5px;
+    transition: all 0.3s ease;
     border: 1px solid #ccc;
     padding-left:15px;
     font-size:16px;
-
 }
 
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
         border-color:#9b59b6;
 }
+
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+form .gender-details .category{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background: pink;
+}
+
+
