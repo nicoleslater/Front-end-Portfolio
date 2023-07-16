@@ -26,6 +26,8 @@ const GENERAL_NEWS = "https://newsapi.org/v2/top-headlines?country=us&category=g
 
 
 
+
+
 generalBtn.addEventListener("click", function(){
     newsType.innerHTML ="<h4>General News</h4>";
     fetchGeneralNews();
