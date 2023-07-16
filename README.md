@@ -1,5 +1,8 @@
 # Front-end-Portfolio
 
+
+Title: Nicole's News Update
+
 API: News API 
 
 As a part of this project I will design a site for people who want to stay up to date in news with the following categories: General News, Technology, Sports, Business and Entertainment. 
