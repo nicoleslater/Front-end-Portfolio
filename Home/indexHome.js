@@ -137,7 +137,7 @@ const fetchQueryNews = async () => {
     if(newsQuery.value == null)
             return;
 
-    const response = await fetch(SEARCH_NEWS+encodeURIComponent(newsQuery.value)+"&apikey="+API_KEY);
+    const response = await fetch(SEARCH_NEWS+encodeURIComponent(newsQuery.value)+"&apikey=248076a179b4446ca60d2fbbe2fbbb60"+API_KEY);
         newsData = [];
     if(response.status >= 200 && response.status < 300){
         const myJson = await response.json();
