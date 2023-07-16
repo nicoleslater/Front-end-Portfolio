@@ -4,11 +4,19 @@
     box-sizing: border-box;
 }
 
+.navbar{
+    width: 100%;
+}
+
+
+body{
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
 
 
 
 a:hover {
-    background-color: rgb(197, 14, 45);
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
   }
 
 
