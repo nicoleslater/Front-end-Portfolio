@@ -121,6 +121,6 @@ form .gender-details .category{
     background: lightblue;
     border-radius: 50%;
     margin-right: 10px;
-    border: 5px solid pink;
+    border: 5px solid transparent;
 }
 
