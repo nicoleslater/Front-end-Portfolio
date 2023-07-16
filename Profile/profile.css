@@ -92,5 +92,5 @@ form .user-details .input-box{
 
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
-
+        border-color:#9b59b6;
 }
