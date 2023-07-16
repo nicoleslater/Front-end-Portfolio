@@ -124,3 +124,13 @@ form .gender-details .category{
     border: 5px solid transparent;
 }
 
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three,{
+        border-color:#9b59b6;
+        background:#71b7e6;
+}
+
+form input[type="radio"]{
+    display: none;
+}
