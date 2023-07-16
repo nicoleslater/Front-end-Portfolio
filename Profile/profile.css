@@ -27,6 +27,13 @@
         margin-bottom: 15px;
         width: 100%;
     }
+    form .gender-details .category{
+        width:100%;
+    }
+    .container form .user-details{
+        max-height: 300px;
+    }
+
 }
 
 body {
