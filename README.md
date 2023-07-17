@@ -14,4 +14,4 @@ Pages for Deployment:
 2. Profile: http://127.0.0.1:5500/Profile/profile.html - You will see a registration form that requires Name and Email Address. 
 3. Home: http://127.0.0.1:5500/Home/home.html - At this homepage you will be able to navigate through General News, Business, Technology, Sports and Entertainmet. 
 
-
+I added a Google Search bar for any client that wants to search for an article. 
