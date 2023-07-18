@@ -53,7 +53,7 @@ body {
     font-weight: 500;
     position: relative;
 }
-.container .title: :before{
+.container .title :before{
     content:'';
     left: 0;
     bottom: 0;
