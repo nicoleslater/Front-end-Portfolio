@@ -11,7 +11,7 @@ const entertainmentBtn = document.getElementById("entertainment");
 const searchBtn = document.getElementById("searchBtn");
 
 const API_KEY = "48ec5f7d46cf41cc85620f9bf94a7b1f";
-const SEARCH_NEWS = "https://newsapi.org/v2/everything?q=bitcoin&apikey=";
+const SEARCH_NEWS = "https://newsapi.org/v2/everything?q=&apikey=";
 const HEADLINE_NEWS = "https://newsapi.org/v2/top-headlines?country=us&apikey=";
 const BUSINESS_NEWS = "https://newsapi.org/v2/top-headlines?country=us&category=business&apikey=";
 const SPORTS_NEWS = "https://newsapi.org/v2/top-headlines?country=us&category=sports&apikey=";
